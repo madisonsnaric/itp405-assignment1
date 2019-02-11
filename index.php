@@ -26,7 +26,7 @@
 		<?php foreach($genres as $genre) : ?>
 		<tr> 
 			<td> 
-				<?php echo "<a href='tracks.php?genre=" . $genre->Name . "'>";
+				<?php echo "<a href='tracks.php?genre=" . urlencode($genre->Name) . "'>";
  					echo $genre->Name;
  					echo "</a>"; 
 				?>
